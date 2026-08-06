@@ -1,0 +1,39 @@
+# ==========================================
+# OpenAI & Environment Secrets (CRITICAL)
+# ==========================================
+.env
+.env.*
+!.env.example
+*.log
+
+# ==========================================
+# Python Runtime & Caches
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+
+# ==========================================
+# Generated Media / Data (e.g., DALL-E / Whisper outputs)
+# ==========================================
+# Uncomment if your script downloads media files locally
+# examples/*.mp3
+# outputs/*.png
+
+# ==========================================
+# IDEs and System Files
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
