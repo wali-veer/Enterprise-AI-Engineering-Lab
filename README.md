@@ -2,11 +2,11 @@
 
 > Building production-ready AI systems is about much more than calling a Large Language Model.
 
-Enterprise AI Engineering Lab is an open-source collection of practical engineering experiments that explore how to design, build, operate, and optimize enterprise-scale AI applications.
+Enterprise AI Engineering Lab is an open-source collection of practical engineering **utilities** that explore how to design, build, operate, and optimize enterprise-scale AI applications.
 
 Unlike repositories that focus primarily on prompt engineering or API usage, this project approaches AI from an engineering and production perspective—covering topics such as token usage, cost optimization, model selection, scalability, observability, reliability, governance, and operational excellence.
 
-Every experiment in this repository answers a practical engineering question using executable Python programs, supported by detailed documentation, architecture diagrams, and real-world production considerations.
+Every utility in this repository answers a practical engineering question through reusable Python implementations, supported by detailed documentation, engineering observations, scalability considerations, and real-world production perspectives.
 
 ---
 
@@ -26,7 +26,28 @@ As AI adoption grows, engineering teams must answer questions that go far beyond
 - How can operational costs be controlled?
 - How do we build reliable AI systems?
 
-This repository explores these questions through practical, reproducible engineering experiments.
+This repository explores these questions through practical, reusable engineering utilities supported by detailed technical documentation.
+
+---
+
+# What makes this repository different?
+
+Many AI repositories focus on learning APIs, prompt engineering, or building simple demonstrations.
+
+This repository takes a different approach.
+
+Every utility is designed to answer a practical engineering question that software teams encounter while building production-ready AI applications.
+
+Each utility includes:
+
+- Production-ready Python implementation
+- Engineering-focused documentation
+- Architecture and workflow illustrations
+- Operational and scalability considerations
+- Practical engineering observations
+- Enterprise recommendations
+
+The objective is not simply to demonstrate AI capabilities, but to understand how AI systems can be engineered, measured, optimized, and operated at enterprise scale.
 
 ---
 
@@ -55,37 +76,52 @@ common/
     Shared reusable modules
 
 docs/
-    Repository documentation
+    Repository and utility documentation
 
-labs/
-    Independent engineering experiments
+utilities/
+    Reusable Enterprise AI engineering utilities
 
 prompts/
-    Sample prompts used by experiments
-
-reports/
-    Generated reports (future)
-
-diagrams/
-    Architecture diagrams (future)
+    Sample prompts for benchmarking and experimentation
 ```
+---
+
+## Repository Philosophy
+
+The goal of this repository is not to build another chatbot.
+
+The goal is to understand the engineering decisions required to build, measure, optimize, and operate production-ready AI systems.
+
+Each utility focuses on one engineering question while building upon the capabilities introduced by previous utilities, gradually forming a practical Enterprise AI Engineering toolkit, gradually forming a practical Enterprise AI Engineering toolkit.
 
 ---
 
-# Engineering Experiments
+# Repository Highlights
 
-| No | Topic | Status |
-|----|-------|--------|
+- Production-oriented Enterprise AI engineering utilities
+- Reusable Python implementations using the OpenAI Responses API
+- Engineering-focused documentation for every utility
+- AI FinOps and cost optimization examples
+- Model benchmarking and comparison
+- Performance and operational analysis
+- Enterprise architecture and scalability considerations
+
+---
+
+# Engineering Utilities
+
+| No | Utility | Status |
+|----|---------|--------|
 | 01 | Token Usage | ✅ Completed |
 | 02 | Pricing | ✅ Completed |
-| 03 | Model Comparison | 🚧 Planned |
-| 04 | Scaling Analysis | 🚧 Planned |
+| 03 | Model Comparison | ✅ Completed |
+| 04 | Response Controls | ✅ Completed |
 | 05 | Prompt Optimization | 🚧 Planned |
-| 06 | Context Window | 🚧 Planned |
-| 07 | Response Validation | 🚧 Planned |
-| 08 | Function Calling | 🚧 Planned |
+| 06 | Structured Output | 🚧 Planned |
+| 07 | Retry & Resilience | 🚧 Planned |
+| 08 | Batch Benchmarking | 🚧 Planned |
 | 09 | Model Routing | 🚧 Planned |
-| 10 | Structured Output | 🚧 Planned |
+| 10 | AI Observability | 🚧 Planned |
 
 ---
 
@@ -97,42 +133,47 @@ Repository documentation is located under the **docs** folder.
 - Architecture
 - Engineering Principles
 - Project Structure
-- Versioning and Releases
 - Engineering Decisions
 
-Each engineering experiment also contains its own dedicated documentation.
+Each engineering utility is accompanied by its own dedicated technical documentation, covering implementation details, engineering observations, architecture, scalability, and production considerations.
 
 ---
 
 # Engineering Principles
 
-The repository follows a few simple principles.
+The repository is guided by a small set of engineering principles that emphasize practical, measurable, and production-oriented AI development.
 
 - Measure before optimizing.
 - Working software over perfect architecture.
-- One engineering question per experiment.
-- Every experiment should be reproducible.
+- One engineering question per utility.
+- Every utility should be reproducible.
 - Every engineering decision should be backed by measurements.
 - Documentation is treated as a first-class deliverable.
-
+- Every engineering decision should justify its operational cost.
 ---
 
 # Roadmap
 
-The long-term objective is to build a practical engineering reference covering the complete lifecycle of enterprise AI systems—from the first API call to operating AI workloads reliably at enterprise scale.
+## Cost Engineering
 
-Future topics include:
+- ✅ Token Usage
+- ✅ Pricing
+- ✅ Response Controls
+- ⬜ Prompt Optimization
 
-- AI FinOps
-- Model Routing
-- Multi-model Architectures
-- Response Caching
-- Context Engineering
-- Observability
-- Reliability Engineering
-- Security
-- Governance
-- Production Deployment Patterns
+## Model Engineering
+
+- ✅ Model Comparison
+- ⬜ Model Routing
+- ⬜ Batch Benchmarking
+
+## Enterprise AI Engineering
+
+- ⬜ Structured Output
+- ⬜ Retry & Resilience
+- ⬜ AI Observability
+- ⬜ AI FinOps
+- ⬜ Guardrails
 
 ---
 
@@ -140,8 +181,7 @@ Future topics include:
 
 Suggestions, improvements, and constructive feedback are always welcome.
 
-If you find an issue or have an idea for a new engineering experiment, feel free to open an issue or submit a pull request.
-
+If you identify an issue or have an idea for a new engineering utility, feel free to open an issue or submit a pull request.
 ---
 
 # License
@@ -152,15 +192,11 @@ This project is released under the MIT License.
 
 # Author
 
+
 **Veeresh Wali**
 
-Enterprise Engineering | Site Reliability Engineering | Platform Engineering | AI Engineering
+Enterprise Engineering • Site Reliability Engineering • Platform Engineering • AI Engineering
 
-LinkedIn:
-https://www.linkedin.com/in/veeresh-wali/
-
-Portfolio:
-https://veereshwali.in/
-
-GitHub:
-https://github.com/wali-veer
+- 🌐 Portfolio: https://veereshwali.in/
+- 💼 LinkedIn: https://www.linkedin.com/in/veeresh-wali/
+- 💻 GitHub: https://github.com/wali-veer
