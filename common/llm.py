@@ -124,3 +124,62 @@ def compare_models(prompt: str) -> List[Dict]:
         )
 
     return results
+
+# ---------------------------------------------------------------------------
+# Response Control Utility
+#
+# Executes a prompt while limiting the maximum number of output tokens.
+# ---------------------------------------------------------------------------
+
+def invoke_model_with_limit(
+    model_name: str,
+    prompt: str,
+    max_output_tokens: int
+) -> Dict:
+    """
+    Execute a prompt using a maximum output token limit.
+
+    Parameters
+    ----------
+    model_name
+        LLM model name.
+
+    prompt
+        Prompt to execute.
+
+    max_output_tokens
+        Maximum response length.
+
+    Returns
+    -------
+    dict
+        Engineering metrics.
+    """
+
+    start = time.perf_counter()
+
+    response = client.responses.create(
+        model=model_name,
+        input=prompt,
+        max_output_tokens=max_output_tokens
+    )
+
+    latency = time.perf_counter() - start
+
+    usage = response.usage
+
+    cost = estimate_cost(
+        model=model_name,
+        input_tokens=usage.input_tokens,
+        output_tokens=usage.output_tokens
+    )
+
+    return {
+        "limit": max_output_tokens,
+        "latency": latency,
+        "input_tokens": usage.input_tokens,
+        "output_tokens": usage.output_tokens,
+        "total_tokens": usage.total_tokens,
+        "cost": cost["total_cost"],
+        "response": response.output_text
+    }
