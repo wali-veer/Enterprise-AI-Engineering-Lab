@@ -39,19 +39,34 @@ The goal is to demonstrate that well-structured prompts can improve the efficien
 
 [Architecture diagram]
 
-Prompt A ──┐
-           │
-           ▼
-      OpenAI Responses API
-           ▲
-           │
-Prompt B ──┘
+                   Prompt A
+              (Verbose Prompt)
+                     │
+                     ▼
+             OpenAI Responses API
+                     │
+                     ▼
+               Metrics Collected
+                     │
+────────────────────────────────────────
+                     │
+               Metrics Compared
+                     │
+────────────────────────────────────────
+                     │
+               Metrics Collected
+                     ▲
+                     │
+             OpenAI Responses API
+                     ▲
+                     │
+                 Prompt B
+             (Optimized Prompt)
 
-           │
+                     │
+                     ▼
 
-           ▼
-
-Engineering Metrics
+        Engineering Observations
 
 # Program Workflow
 
