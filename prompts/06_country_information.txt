@@ -1,0 +1,4 @@
+Provide information about Qatar.
+
+Limit the response to less than 300 characters. 
+

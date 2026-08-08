@@ -2,7 +2,7 @@
 ===============================================================================
 Enterprise AI Engineering Lab
 
-Study:
+Module:
     Shared LLM Utilities
 
 Objective:
@@ -19,19 +19,26 @@ Repository:
 
 from __future__ import annotations
 
-import time
+# import time
 from typing import Dict, List
 
-from openai import OpenAI
+from time import perf_counter
+from pydantic import BaseModel
+
+# from openai import OpenAI
 
 from common.openai_client import client
 from common.pricing import estimate_cost
 
 
 # ---------------------------------------------------------------------------
-# Supported Models
+# Public API
+# ---------------------------------------------------------------------------
 #
-# New models can be added here without modifying the engineering studies.
+# invoke_model()
+# invoke_model_with_limit()
+# invoke_structured_model()
+#
 # ---------------------------------------------------------------------------
 
 SUPPORTED_MODELS: List[str] = [
@@ -70,14 +77,14 @@ def invoke_model(model_name: str, prompt: str) -> Dict:
     }
     """
 
-    start = time.perf_counter()
+    start = perf_counter()
 
     response = client.responses.create(
         model=model_name,
         input=prompt
     )
 
-    latency = time.perf_counter() - start
+    latency = perf_counter() - start
 
     usage = response.usage
 
@@ -156,7 +163,7 @@ def invoke_model_with_limit(
         Engineering metrics.
     """
 
-    start = time.perf_counter()
+    start = perf_counter()
 
     response = client.responses.create(
         model=model_name,
@@ -164,7 +171,7 @@ def invoke_model_with_limit(
         max_output_tokens=max_output_tokens
     )
 
-    latency = time.perf_counter() - start
+    latency = perf_counter() - start
 
     usage = response.usage
 
@@ -182,4 +189,69 @@ def invoke_model_with_limit(
         "total_tokens": usage.total_tokens,
         "cost": cost["total_cost"],
         "response": response.output_text
+    }
+
+# ---------------------------------------------------------------------------
+# Structured Output
+# ---------------------------------------------------------------------------
+def invoke_structured_model(
+    model_name: str,
+    prompt: str,
+    response_schema: type[BaseModel],
+    instructions: str | None = None,
+) -> Dict:
+    """
+    Invoke an OpenAI model and parse the response into
+    a Pydantic model.
+
+    Parameters
+    ----------
+    model_name
+        Name of the OpenAI model.
+
+    prompt
+        Prompt to send to the model.
+
+    response_schema
+        Pydantic model describing the expected response.
+
+    Returns
+    -------
+    dict
+        Standardized engineering metrics together with
+        the parsed structured response.
+    """
+
+    start_time = perf_counter()
+
+    request = {
+        "model": model_name,
+        "input": prompt,
+        "text_format": response_schema,
+    }
+
+    if instructions:
+        request["instructions"] = instructions
+
+    response = client.responses.parse(**request)
+
+    latency = perf_counter() - start_time
+
+    usage = response.usage
+
+    cost = estimate_cost(
+        model=model_name,
+        input_tokens=usage.input_tokens,
+        output_tokens=usage.output_tokens
+    )
+
+    return {
+        "model": model_name,
+        "latency": latency,
+        "input_tokens": usage.input_tokens,
+        "output_tokens": usage.output_tokens,
+        "total_tokens": usage.total_tokens,
+        "cost": cost["total_cost"],
+        "structured_response": response.output_parsed,
+        "schema_valid": response.output_parsed is not None,
     }

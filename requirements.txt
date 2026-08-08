@@ -1,3 +1,11 @@
-openai>=2.0.0
-python-dotenv>=1.1.0
-rich>=14.0.0
+# OpenAI Responses API
+openai
+
+# Environment variable management
+python-dotenv
+
+# Rich terminal output
+rich
+
+# Data validation and structured output
+pydantic>=2.12.0

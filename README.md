@@ -121,7 +121,7 @@ Each utility focuses on one engineering question while building upon the capabil
 | 03 | Model Comparison | ✅ Completed |
 | 04 | Response Controls | ✅ Completed |
 | 05 | Prompt Optimization | ✅ Completed |
-| 06 | Structured Output | 🚧 Planned |
+| 06 | Structured Output | ✅ Completed |
 | 07 | Retry & Resilience | 🚧 Planned |
 | 08 | Batch Benchmarking | 🚧 Planned |
 | 09 | Model Routing | 🚧 Planned |
