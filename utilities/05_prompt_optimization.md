@@ -39,34 +39,47 @@ The goal is to demonstrate that well-structured prompts can improve the efficien
 
 [Architecture diagram]
 
-                   Prompt A
-              (Verbose Prompt)
-                     │
-                     ▼
-             OpenAI Responses API
-                     │
-                     ▼
-               Metrics Collected
-                     │
-────────────────────────────────────────
-                     │
-               Metrics Compared
-                     │
-────────────────────────────────────────
-                     │
-               Metrics Collected
-                     ▲
-                     │
-             OpenAI Responses API
-                     ▲
-                     │
-                 Prompt B
-             (Optimized Prompt)
+┌─────────────────────┐
+│ Verbose Prompt      │
+└─────────────────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ OpenAI Responses API│
+└─────────────────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ Engineering Metrics │
+└─────────────────────┘
 
-                     │
-                     ▼
+                │
+                │ Compare
+                ▼
 
-        Engineering Observations
+┌─────────────────────┐
+│ Optimized Prompt    │
+└─────────────────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ OpenAI Responses API│
+└─────────────────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ Engineering Metrics │
+└─────────────────────┘
+
+          │
+          ▼
+┌──────────────────────────────────┐
+│ Optimization Impact              │
+│ • Tokens                         │
+│ • Latency                        │
+│ • Cost                           │
+│ • Recommendation                 │
+└──────────────────────────────────┘
 
 # Program Workflow
 
