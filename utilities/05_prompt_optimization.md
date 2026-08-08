@@ -39,6 +39,7 @@ The goal is to demonstrate that well-structured prompts can improve the efficien
 
 [Architecture diagram]
 
+```
 ┌─────────────────────┐
 │ Verbose Prompt      │
 └─────────────────────┘
@@ -80,7 +81,7 @@ The goal is to demonstrate that well-structured prompts can improve the efficien
 │ • Cost                           │
 │ • Recommendation                 │
 └──────────────────────────────────┘
-
+```
 # Program Workflow
 
 1. Load two prompts from the prompts directory.
