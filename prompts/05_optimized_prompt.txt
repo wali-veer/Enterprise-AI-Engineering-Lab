@@ -1,0 +1,9 @@
+Explain Docker to an experienced software engineer.
+
+Include only:
+
+- Purpose
+- Core components
+- Three enterprise use cases
+
+Limit the response to five concise bullet points.

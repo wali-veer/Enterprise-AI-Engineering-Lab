@@ -1,0 +1,16 @@
+You are an experienced Enterprise Platform Architect.
+
+Provide a comprehensive explanation of Docker suitable for an engineering team.
+
+Include:
+
+- What Docker is
+- Why it is used
+- Key architecture components
+- Advantages
+- Limitations
+- Real-world enterprise use cases
+- Best practices
+- Conclusion
+
+Provide the answer in detail using paragraphs and examples where appropriate.
