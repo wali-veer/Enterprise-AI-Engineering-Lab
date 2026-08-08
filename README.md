@@ -83,6 +83,10 @@ utilities/
 
 prompts/
     Sample prompts for benchmarking and experimentation
+
+assets/
+    outputs/
+        Utility execution screenshots
 ```
 ---
 
@@ -100,7 +104,7 @@ Each utility focuses on one engineering question while building upon the capabil
 
 - Production-oriented Enterprise AI engineering utilities
 - Reusable Python implementations using the OpenAI Responses API
-- Engineering-focused documentation for every utility
+- Engineering-focused documentation with architecture diagrams, execution workflows, and validated output for every utility
 - AI FinOps and cost optimization examples
 - Model benchmarking and comparison
 - Performance and operational analysis
