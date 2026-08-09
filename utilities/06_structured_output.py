@@ -2,8 +2,7 @@
 ===============================================================================
 Enterprise AI Engineering Lab
 
-Utility:
-    06 - Structured Output
+Release 6 : Structured Output
 
 Objective:
     Demonstrate why enterprise AI applications require structured responses
@@ -26,12 +25,9 @@ from rich.panel import Panel
 from common.config import MODEL_NAME
 from common.llm import invoke_model, invoke_structured_model
 
-
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-
-#MODEL_NAME = DEFAULT_MODEL
 
 PROMPT_FILE = (
     Path(__file__).resolve().parents[1]
@@ -40,7 +36,6 @@ PROMPT_FILE = (
 )
 
 console = Console()
-
 
 # ---------------------------------------------------------------------------
 # Structured Response Schema
@@ -55,7 +50,6 @@ class CountryInformation(BaseModel):
     capital: str
     population: str
     currency: str
-
 
 # ---------------------------------------------------------------------------
 # Helper Functions
@@ -146,7 +140,6 @@ def run_structured_demo(
     return results
 
 from rich.table import Table
-
 
 # ---------------------------------------------------------------------------
 # Display Functions
@@ -241,7 +234,6 @@ def display_structured_results(results: list[dict]) -> None:
 
         console.print(table)
 
-
 def display_engineering_summary(
     natural_results: list[dict],
     structured_results: list[dict],
@@ -291,7 +283,6 @@ def display_engineering_summary(
         )
     )
 
-
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -318,7 +309,6 @@ def main() -> None:
         natural_results,
         structured_results,
     )
-
 
 if __name__ == "__main__":
     main()

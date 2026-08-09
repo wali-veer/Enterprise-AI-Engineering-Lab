@@ -2,7 +2,6 @@
 Enterprise AI Engineering Lab
 
 Pricing Utility
-
 Calculates the estimated cost of an OpenAI API request.
 
 NOTE:
@@ -39,7 +38,6 @@ MODEL_PRICING = {
     "output": 0.625,
     },
 }
-
 
 def estimate_cost(model: str,
                   input_tokens: int,

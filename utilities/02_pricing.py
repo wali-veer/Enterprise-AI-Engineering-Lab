@@ -1,9 +1,7 @@
 """
 Enterprise AI Engineering Lab
 
-Lab-02
-
-Pricing
+Release 2 : Pricing
 
 Goal
 
@@ -24,24 +22,18 @@ from common.pricing import estimate_cost
 
 console = Console()
 
-
 def read_prompt():
-
     return Path("prompts/sample_prompt.txt").read_text(
         encoding="utf-8"
     )
-
 
 prompt = read_prompt()
 
 start = time.perf_counter()
 
 response = client.responses.create(
-
     model=MODEL_NAME,
-
     input=prompt
-
 )
 
 elapsed = time.perf_counter() - start
@@ -49,13 +41,9 @@ elapsed = time.perf_counter() - start
 usage = response.usage
 
 cost = estimate_cost(
-
     MODEL_NAME,
-
     usage.input_tokens,
-
     usage.output_tokens
-
 )
 
 table = Table(title=" Pricing Analysis")

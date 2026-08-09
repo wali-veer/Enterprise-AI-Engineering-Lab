@@ -1,18 +1,14 @@
 """
 ===============================================================================
-
 Enterprise AI Engineering Lab
 
-Utility 05
-
-Prompt Optimization
+release 5 : Prompt Optimization
 
 Engineering Question
 
 Can better prompt design reduce token usage,
 latency, and operational cost while preserving
 response quality?
-
 ===============================================================================
 """
 
@@ -37,7 +33,6 @@ def read_prompt(file_path: str) -> str:
     Read a prompt from disk.
     """
     return Path(file_path).read_text(encoding="utf-8")
-
 
 def main():
 
@@ -178,8 +173,6 @@ def calculate_improvement(baseline: float, optimized: float) -> float:
         return 0.0
 
     return ((baseline - optimized) / baseline) * 100
-
-
 
 if __name__ == "__main__":
     main()

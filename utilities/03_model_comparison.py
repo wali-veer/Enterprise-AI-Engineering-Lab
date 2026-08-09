@@ -2,8 +2,7 @@
 ===============================================================================
 Enterprise AI Engineering Lab
 
-Study:
-    03 - Model Comparison
+Release 3 : Model Comparison
 
 Engineering Question
 
@@ -26,12 +25,11 @@ from common.llm import compare_models
 
 console = Console()
 
-
 def read_prompt() -> str:
     """
     Read sample prompt.
     """
-
+    
     return Path("prompts/sample_prompt.txt").read_text(
         encoding="utf-8"
     )
@@ -51,7 +49,6 @@ def build_table(results):
     table.add_column("Cost ($)", justify="right")
 
     for result in results:
-
         table.add_row(
             result["model"],
             f"{result['latency']:.2f}",
@@ -97,21 +94,14 @@ def print_summary(results):
         f"📦 Lowest Token Usage : {lowest_tokens['model']}"
     )
 
-
 def main():
-
     prompt = read_prompt()
-
     results = compare_models(prompt)
-
     console.print()
-
     console.print(
         build_table(results)
     )
-
     print_summary(results)
-
 
 if __name__ == "__main__":
     main()

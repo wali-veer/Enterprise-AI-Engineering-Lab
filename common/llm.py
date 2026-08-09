@@ -17,22 +17,19 @@ Repository:
 ===============================================================================
 """
 
+# imports
 from __future__ import annotations
 
-# import time
 from typing import Dict, List
 
 from time import perf_counter
 from pydantic import BaseModel
-
-# from openai import OpenAI
-
 from common.openai_client import client
 from common.pricing import estimate_cost
 
 
 # ---------------------------------------------------------------------------
-# Public API
+# APIs
 # ---------------------------------------------------------------------------
 #
 # invoke_model()
@@ -65,7 +62,6 @@ def invoke_model(model_name: str, prompt: str) -> Dict:
     dict
 
     Example
-
     {
         "model": "gpt-5",
         "latency": 1.42,
@@ -134,7 +130,6 @@ def compare_models(prompt: str) -> List[Dict]:
 
 # ---------------------------------------------------------------------------
 # Response Control Utility
-#
 # Executes a prompt while limiting the maximum number of output tokens.
 # ---------------------------------------------------------------------------
 

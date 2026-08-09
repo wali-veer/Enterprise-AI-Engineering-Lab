@@ -3,9 +3,7 @@
 
 Enterprise AI Engineering Lab
 
-Utility 04
-
-Response Controls
+Release 4 : Response Controls
 
 Engineering Question
 
@@ -39,7 +37,6 @@ def read_prompt() -> str:
     ).read_text(
         encoding="utf-8"
     )
-
 
 def main():
 
@@ -111,7 +108,6 @@ def main():
         "requirements instead of allowing unnecessarily "
         "long responses."
     )
-
 
 if __name__ == "__main__":
     main()

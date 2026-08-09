@@ -1,10 +1,9 @@
 """
 Enterprise AI Engineering Lab
 
-Lab 01
 Token Engineering
 
-Sprint-1 Deliverable
+Release-1 Deliverable
 
 Reads a prompt from a file,
 invokes an OpenAI model,
@@ -24,14 +23,12 @@ from common.openai_client import client
 
 console = Console()
 
-
 def read_prompt() -> str:
     """
     Reads the sample prompt from the prompts folder.
     """
     prompt_file = Path("prompts/sample_prompt.txt")
     return prompt_file.read_text(encoding="utf-8")
-
 
 def main():
 
