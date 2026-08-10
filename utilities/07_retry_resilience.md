@@ -62,7 +62,7 @@ prompts/
 
 ## Sample Output
 
-![Retry & Resilience Output](assets/outputs/07_retry_resilience.png)
+![Retry & Resilience Output](../assets/outputs/07_retry_resilience.png)
 
 ---
 
