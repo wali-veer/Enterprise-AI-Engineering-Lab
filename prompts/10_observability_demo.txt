@@ -1,0 +1,15 @@
+Answer the following enterprise AI engineering questions clearly and concisely.
+
+1. Explain why latency is an important observability signal for AI applications.
+2. Explain why token consumption should be monitored separately from request latency.
+3. Explain why AI application cost should be treated as an operational metric.
+4. Describe the difference between telemetry collection and observability.
+5. Explain why production thresholds should be derived from workload-specific SLOs and historical baselines.
+---
+Explain how an SRE team should use latency, reliability, token consumption, and cost telemetry when operating a production AI application.
+---
+Describe the main observability challenges that are specific to generative AI applications compared with traditional APIs.
+---
+Explain how an AI application's model choice can affect latency, token consumption, cost, and reliability, and what should be monitored.
+---
+Provide a concise checklist for designing an enterprise-grade AI observability strategy.

@@ -125,7 +125,7 @@ Each utility focuses on one engineering question while building upon the capabil
 | 07 | Retry & Resilience | ✅ Completed |
 | 08 | Individual vs Batch invocation | ✅ Completed |
 | 09 | Model Routing | ✅ Completed |
-| 10 | AI Observability | 🚧 Planned |
+| 10 | AI Observability | ✅ Completed |
 
 ---
 
