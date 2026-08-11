@@ -1,0 +1,5 @@
+Explain what Site Reliability Engineering (SRE) means in simple terms.
+Explain the difference between monitoring and observability.
+What is an error budget in SRE?
+Explain why latency matters in AI applications.
+What is the purpose of a service level objective (SLO)?

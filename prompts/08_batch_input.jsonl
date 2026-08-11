@@ -1,0 +1,5 @@
+{"custom_id": "request-1", "method": "POST", "url": "/v1/responses", "body": {"model": "gpt-5-nano", "input": "Explain what Site Reliability Engineering (SRE) means in simple terms."}}
+{"custom_id": "request-2", "method": "POST", "url": "/v1/responses", "body": {"model": "gpt-5-nano", "input": "Explain the difference between monitoring and observability."}}
+{"custom_id": "request-3", "method": "POST", "url": "/v1/responses", "body": {"model": "gpt-5-nano", "input": "What is an error budget in SRE?"}}
+{"custom_id": "request-4", "method": "POST", "url": "/v1/responses", "body": {"model": "gpt-5-nano", "input": "Explain why latency matters in AI applications."}}
+{"custom_id": "request-5", "method": "POST", "url": "/v1/responses", "body": {"model": "gpt-5-nano", "input": "What is the purpose of a service level objective (SLO)?"}}

@@ -123,7 +123,7 @@ Each utility focuses on one engineering question while building upon the capabil
 | 05 | Prompt Optimization | ✅ Completed |
 | 06 | Structured Output | ✅ Completed |
 | 07 | Retry & Resilience | ✅ Completed |
-| 08 | Batch Benchmarking | 🚧 Planned |
+| 08 | Individual vs Batch invocation | ✅ Completed |
 | 09 | Model Routing | 🚧 Planned |
 | 10 | AI Observability | 🚧 Planned |
 
