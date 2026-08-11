@@ -46,6 +46,7 @@ This utility demonstrates:
 The same five prompts are executed using two different execution strategies.
 
 ```text
+
                          SAME WORKLOAD
                           5 PROMPTS
                               │
@@ -68,6 +69,7 @@ The same five prompts are executed using two different execution strategies.
                                └────────────┬────────────┘
                                             ▼
                                          Response
+```
                                 
 ## Sample Output
 
