@@ -341,10 +341,7 @@ A critical signal takes precedence over a warning signal.
 
 The complete console output is captured in three screenshots because the observability output contains multiple sections.
 
-### Part 1 – Request Execution & Request Telemetry
-
-This section shows:
-
+### Request Execution & Request Telemetry
 - Workload information
 - Individual request execution
 - Request IDs
@@ -355,13 +352,7 @@ This section shows:
 - Token consumption
 - Request cost
 
-![AI Observability Output – Part 1](../assets/outputs/10_ai_observability_part1.png)
-
----
-
-### Part 2 – Engineering & Consumption Metrics
-
-This section shows:
+### Engineering & Consumption Metrics
 
 - Aggregate engineering metrics
 - Success and error rates
@@ -372,13 +363,7 @@ This section shows:
 - Average request cost
 - Demonstration thresholds
 
-![AI Observability Output – Part 2](../assets/outputs/10_ai_observability_part2.png)
-
----
-
-### Part 3 – Observability Assessment
-
-This section shows:
+### Observability Assessment
 
 - Overall workload health
 - Critical threshold breaches
@@ -386,9 +371,10 @@ This section shows:
 - Reliability status
 - Engineering recommendation
 
+![AI Observability Output – Part 1](../assets/outputs/10_ai_observability_part1.png)
+![AI Observability Output – Part 2](../assets/outputs/10_ai_observability_part2.png)
 ![AI Observability Output – Part 3](../assets/outputs/10_ai_observability_part3.png)
 
----
 
 ## Example Engineering Metrics
 
