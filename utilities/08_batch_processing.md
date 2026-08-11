@@ -139,12 +139,9 @@ The utility captures:
 
 The execution output is captured in two screenshots because the complete console output is larger than a single screen.
 
-### Part 1 – Execution and Batch Lifecycle
+### Below mentioned screenshots shows Execution, Batch Lifecycle, Metrics and Engineering Recommendation
 
 ![Batch Processing Output – Part 1](../assets/outputs/08_batch_processing_part1.png)
-
-### Part 2 – Metrics and Engineering Recommendation
-
 ![Batch Processing Output – Part 2](../assets/outputs/08_batch_processing_part2.png)
 
 ---
