@@ -97,7 +97,7 @@ Request    Complexity    Selected Model    Router Latency    Execution Latency
 3          simple        gpt-5-nano       11.54 sec         15.07 sec
 4          complex       gpt-5-mini        5.33 sec         30.18 sec
 5          complex       gpt-5-mini        4.70 sec         61.75 sec
-
+```
 
 ## Engineering Recommendation
 
