@@ -1,0 +1,5 @@
+What is the capital of France?
+Convert 25 degrees Celsius to Fahrenheit.
+Explain why database indexes improve query performance.
+Explain how SLOs and error budgets can be used to manage reliability in a distributed banking platform.
+Design a high-level architecture for a globally distributed payment processing platform with multi-region disaster recovery, observability, and resilience requirements.
