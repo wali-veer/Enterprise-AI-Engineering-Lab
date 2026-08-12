@@ -101,14 +101,18 @@ v0.2.2
 
 # Current Release Roadmap
 
-| Version | Engineering Study | Status |
-|----------|-------------------|---------|
-| v0.1.0 | Token Usage | ✅ Released |
-| v0.2.0 | Pricing | ✅ Released |
-| v0.3.0 | Model Comparison | 🚧 In Progress |
-| v0.4.0 | Scaling Analysis | Planned |
-| v0.5.0 | Prompt Optimization | Planned |
-| v0.6.0 | Context Engineering | Planned |
+| No | Utility | Status |
+|----|---------|--------|
+| 01 | Token Usage | ✅ Completed |
+| 02 | Pricing | ✅ Completed |
+| 03 | Model Comparison | ✅ Completed |
+| 04 | Response Controls | ✅ Completed |
+| 05 | Prompt Optimization | ✅ Completed |
+| 06 | Structured Output | ✅ Completed |
+| 07 | Retry & Resilience | ✅ Completed |
+| 08 | Individual vs Batch invocation | ✅ Completed |
+| 09 | Model Routing | ✅ Completed |
+| 10 | AI Observability | ✅ Completed |
 
 This roadmap will evolve as the repository grows.
 

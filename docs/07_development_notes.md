@@ -20,7 +20,7 @@ PowerShell:
 
 ```powershell
 $env:PYTHONPATH = (Get-Location).Path
-python labs\lab01-token-engineering\lab01_token_usage.py
+python '\utilities\lab01_token_usage.py
 ```
 
 This is a temporary workaround during the early development of the project.

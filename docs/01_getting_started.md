@@ -96,13 +96,13 @@ Each experiment is an independent Python program.
 For example:
 
 ```bash
-python labs/01_token_usage.py
+python utilities/01_token_usage.py
 ```
 
 or
 
 ```bash
-python labs/02_pricing.py
+python utilities/02_pricing.py
 ```
 
 Every experiment can be executed independently.
@@ -120,7 +120,7 @@ common/
 docs/
     Repository documentation
 
-labs/
+utilities/
     Independent engineering experiments
 
 prompts/

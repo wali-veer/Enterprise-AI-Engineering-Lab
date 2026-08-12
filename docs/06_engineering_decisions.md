@@ -244,6 +244,38 @@ Trade-off
 
 Some implementation details are intentionally omitted from architecture documents.
 
+## ED-009 — Execution Models Should Be Compared, Not Ranked
+
+### From Utility 08.
+
+Individual vs Batch should be evaluated based on workload requirements rather than declaring one universally better.
+
+## ED-010 — Model Routing Must Account for Routing Overhead
+
+### From Utility 09.
+
+Routing introduces latency/token/cost overhead and is valuable primarily for heterogeneous workloads.
+
+## ED-011 — AI Observability Must Separate Reliability from Performance
+
+### From Utility 10.
+
+A workload can have:
+
+100% success
+0% errors
+CRITICAL latency
+
+## ED-012 — Demonstration Thresholds Must Not Be Presented as Production SLOs
+
+### Also Utility 10.
+
+This is important because otherwise our observability example could be misleading.
+
+## ED-013 — Human Engineering Judgment Remains Accountable in AI-Assisted Development
+
+This would document the ChatGPT thought-partner model.
+
 ---
 
 # Decision Review

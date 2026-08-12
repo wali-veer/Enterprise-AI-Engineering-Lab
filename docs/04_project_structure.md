@@ -32,7 +32,7 @@ Enterprise-AI-Engineering-Lab
 ├── docs/
 │     Repository documentation
 │
-├── labs/
+├── utilities/
 │     Independent engineering studies
 │
 ├── prompts/
@@ -87,7 +87,7 @@ These documents evolve slowly and provide the foundation for every engineering s
 
 ---
 
-## labs/
+## utilities/
 
 This is the heart of the repository.
 
